@@ -1,0 +1,388 @@
+Index · HTML
+Copiar
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VOLTA — Embalagens Circulares para E-commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init("imr5bt6a8FXFn9jSb");</script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-icon">↺</div>
+      VOLTA
+    </a>
+    <ul class="nav-links">
+      <li><a href="#problem">Problema</a></li>
+      <li><a href="#how">Como Funciona</a></li>
+      <li><a href="#forwhom">Para Quem</a></li>
+      <li><a href="#impact">Impacto</a></li>
+      <li><a href="#simulator">Simulador</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">Começar Agora</a>
+    <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+  <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+  <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+</button>
+  </div>
+</nav>
+ 
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#problem" class="mobile-link">Problema</a>
+  <a href="#how" class="mobile-link">Como Funciona</a>
+  <a href="#forwhom" class="mobile-link">Para Quem</a>
+  <a href="#impact" class="mobile-link">Impacto</a>
+  <a href="#simulator" class="mobile-link">Simulador</a>
+  <a href="#cta" class="mobile-link" style="color:var(--g)">Começar Agora →</a>
+</div>
+ 
+<!-- ═══ HERO ═══ -->
+<section id="home" class="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+  <div class="hero-grid"></div>
+ 
+  <div class="hero-content">
+    <div class="hero-badge">Sistema circular para e-commerce</div>
+    <h1>
+      <span class="white">Embalagens que</span><br>
+      <span class="green">voltam.</span>
+      <span class="white"> Sempre.</span>
+    </h1>
+    <p class="hero-sub">
+      Reduza 87% do seu lixo de embalagem e converta resíduos em economia real com nossa rede de embalagens retornáveis inteligentes.
+    </p>
+    <div class="hero-btns">
+      <a href="#simulator" class="btn-primary">
+        Simular Economia
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#how" class="btn-ghost">Como funciona</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">87%</div>
+        <div class="hero-stat-label">Redução de lixo</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">100+</div>
+        <div class="hero-stat-label">Ciclos por pack</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">98,7%</div>
+        <div class="hero-stat-label">Taxa de retorno</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">528</div>
+        <div class="hero-stat-label">Parceiros ativos</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══ PROBLEM ═══ -->
+<div class="problem-section">
+  <div class="problem-section-inner">
+    <div id="problem" class="section">
+      <div class="problem-header">
+        <div class="section-eyebrow">O Contexto</div>
+        <h2 class="section-title">O e-commerce brasileiro tem um problema de <span class="accent">lixo invisível</span></h2>
+        <p class="section-sub">Bilhões gastos anualmente em embalagens que vão direto para o aterro — em um processo que pode ser completamente revertido.</p>
+      </div>
+      <div class="problem-cards stagger">
+        <div class="problem-card">
+          <div class="metric-num">87%</div>
+          <div class="metric-lbl">Das embalagens de e-commerce vão direto para o lixo</div>
+        </div>
+        <div class="problem-card">
+          <div class="metric-num">R$ 2,8 bi</div>
+          <div class="metric-lbl">Gasto anual com embalagens descartáveis no Brasil</div>
+        </div>
+        <div class="problem-card">
+          <div class="metric-num">92%</div>
+          <div class="metric-lbl">Do plástico de e-commerce não é efetivamente reciclado</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ═══ HOW IT WORKS ═══ -->
+<div id="how" class="section">
+  <div class="section-eyebrow">O Sistema</div>
+  <h2 class="section-title">Quatro passos para a <span class="accent">circularidade</span></h2>
+  <p class="section-sub">Do primeiro pedido ao centésimo ciclo — uma infraestrutura pronta para escalar com o seu negócio.</p>
+  <div class="how-grid stagger">
+    <div class="how-step">
+      <div class="how-num-wrap"><div class="how-num">01</div></div>
+      <div class="how-step-title">Você assina</div>
+      <div class="how-step-desc">Escolha seu volume mensal e receba os packs VOLTA na sua operação. Integração em 48h.</div>
+      <span class="how-step-tag">setup rápido</span>
+    </div>
+    <div class="how-step">
+      <div class="how-num-wrap"><div class="how-num">02</div></div>
+      <div class="how-step-title">Cliente recebe</div>
+      <div class="how-step-desc">Embalagem premium vai junto com o pedido. QR code incluso com instruções de devolução.</div>
+      <span class="how-step-tag">experiência premium</span>
+    </div>
+    <div class="how-step">
+      <div class="how-num-wrap"><div class="how-num">03</div></div>
+      <div class="how-step-title">Pack retorna</div>
+      <div class="how-step-desc">Coleta via Correios ou parceiros logísticos. 98,7% de taxa de retorno comprovada.</div>
+      <span class="how-step-tag">sem fricção</span>
+    </div>
+    <div class="how-step">
+      <div class="how-num-wrap"><div class="how-num">04</div></div>
+      <div class="how-step-title">Você economiza</div>
+      <div class="how-step-desc">Higienização industrial, reuso por 100+ ciclos. Custo por uso cai para R$1,20.</div>
+      <span class="how-step-tag">70–90% economia</span>
+    </div>
+  </div>
+</div>
+ 
+
+<div id="forwhom" class="section">
+  <div class="section-eyebrow">Segmentos</div>
+  <h2 class="section-title">Feito para quem <span class="accent">escala</span></h2>
+  <p class="section-sub">Do e-commerce independente ao marketplace nacional, a VOLTA se adapta ao seu modelo de negócio.</p>
+  <div class="forwhom-grid stagger">
+    <div class="forwhom-card">
+      <div class="forwhom-icon">📦</div>
+      <div class="forwhom-title">E-commerces de Médio Porte</div>
+      <ul class="forwhom-list">
+        <li>50 a 500 pedidos por dia</li>
+        <li>Faturamento R$100k–2M/mês</li>
+        <li>Redução imediata de custos com embalagem</li>
+        <li>Relatório mensal de CO₂ evitado incluso</li>
+      </ul>
+    </div>
+    <div class="forwhom-card">
+      <div class="forwhom-icon">🚚</div>
+      <div class="forwhom-title">Marketplaces</div>
+      <ul class="forwhom-list">
+        <li>Multi-vendedores com logística centralizada</li>
+        <li>API de rastreamento de packs em tempo real</li>
+        <li>Selos de sustentabilidade para seus sellers</li>
+        <li>Dashboard unificado de impacto ambiental</li>
+      </ul>
+    </div>
+    <div class="forwhom-card">
+      <div class="forwhom-icon">🌿</div>
+      <div class="forwhom-title">Marcas Sustentáveis</div>
+      <ul class="forwhom-list">
+        <li>Alinhamento com metas ESG e B Corp</li>
+        <li>Suporte a certificações ambientais</li>
+        <li>Storytelling de circularidade para clientes</li>
+        <li>Comunidade de parceiros sustentáveis</li>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+
+<div id="impact" class="section">
+  <div class="section-eyebrow">Números Reais</div>
+  <h2 class="section-title">Impacto que <span class="accent">se acumula</span></h2>
+  <p class="section-sub">Cada pack que volta ao ciclo é uma escolha que escala. Veja o que pode ser Conquistado.</p>
+  <div class="impact-layout">
+    <div class="impact-counters stagger">
+      <div class="impact-counter">
+        <div class="impact-counter-num counter" data-target="1247" data-suffix=" t">0 t</div>
+        <div class="impact-counter-lbl">Plástico economizado</div>
+      </div>
+      <div class="impact-counter">
+        <div class="impact-counter-num counter" data-target="4.2" data-prefix="R$ " data-suffix=" mi">R$ 0 mi</div>
+        <div class="impact-counter-lbl">Economia total gerada</div>
+      </div>
+      <div class="impact-counter">
+        <div class="impact-counter-num counter" data-target="528" data-suffix="">0</div>
+        <div class="impact-counter-lbl">Parceiros ativos</div>
+      </div>
+      <div class="impact-counter">
+        <div class="impact-counter-num counter" data-target="98.7" data-suffix="%">0%</div>
+        <div class="impact-counter-lbl">Taxa de retorno dos packs</div>
+      </div>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-title">Destino das embalagens: antes vs. depois da VOLTA</div>
+      <canvas id="impactChart"></canvas>
+    </div>
+  </div>
+</div>
+ 
+
+<div class="testimonials-bg">
+  <div id="testimonials" class="section">
+    <div class="section-eyebrow">Depoimentos</div>
+    <h2 class="section-title">O que nossos <span class="accent">parceiros</span> dizem</h2>
+    <div class="testimonials-grid stagger">
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">"Em 3 meses, reduzimos o custo com embalagens em 74% e ganhamos um diferencial competitivo enorme junto ao nosso público. A implementação foi surpreendentemente simples."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MR</div>
+          <div>
+            <div class="testi-name">Mariana Rezende</div>
+            <div class="testi-role">CEO · NaturaBox E-commerce</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">"A taxa de retorno de 98% que eles prometem é real. Nossos clientes adoram o QR code — virou até parte da experiência de unboxing. Recomendo para qualquer e-commerce sério."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">TC</div>
+          <div>
+            <div class="testi-name">Thiago Carvalho</div>
+            <div class="testi-role">COO · Marketplace Orbi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">"Usamos os dados do relatório VOLTA para nossa certificação ESG. Em 6 meses economizamos 4,8 toneladas de plástico — número que transformou nossa narrativa para investidores."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AS</div>
+          <div>
+            <div class="testi-name">Amanda Souza</div>
+            <div class="testi-role">Diretora de Sustentabilidade · Verde+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<div id="simulator" class="section">
+  <div class="section-eyebrow">Calculadora</div>
+  <h2 class="section-title" style="text-align:center">Calcule sua <span class="accent">economia</span></h2>
+  <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center">Arraste os controles e veja o impacto financeiro e ambiental em tempo real.</p>
+  <div class="sim-card">
+    <div class="sim-header">
+      <h3>Simulador de Retorno</h3>
+      <p>Baseado em dados reais dos nossos parceiros ativos</p>
+    </div>
+    <div class="sim-inputs">
+      <div class="sim-field">
+        <label>Pedidos mensais <span id="ordersVal">1.200</span></label>
+        <div class="sim-range-wrap">
+          <input type="range" class="sim-range" id="ordersRange" min="100" max="10000" value="1200" step="50">
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:.5rem;">
+          <span style="font-size:.72rem;color:var(--txt3)">100</span>
+          <span style="font-size:.72rem;color:var(--txt3)">10.000</span>
+        </div>
+      </div>
+      <div class="sim-field">
+        <label>Custo atual / embalagem <span id="costVal">R$ 8,50</span></label>
+        <div class="sim-range-wrap">
+          <input type="range" class="sim-range" id="costRange" min="3" max="25" value="8.5" step="0.5">
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:.5rem;">
+          <span style="font-size:.72rem;color:var(--txt3)">R$ 3</span>
+          <span style="font-size:.72rem;color:var(--txt3)">R$ 25</span>
+        </div>
+      </div>
+    </div>
+    <div class="sim-results">
+      <div class="sim-result">
+        <div class="sim-result-num" id="resEco">R$ 8.760</div>
+        <div class="sim-result-lbl">Economia / mês</div>
+      </div>
+      <div class="sim-result">
+        <div class="sim-result-num" id="resLixo">87%</div>
+        <div class="sim-result-lbl">Redução de lixo</div>
+      </div>
+      <div class="sim-result">
+        <div class="sim-result-num" id="resCO2">1,7 t</div>
+        <div class="sim-result-lbl">CO₂ evitado / mês</div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<div class="cta-strip">
+  <div id="cta" class="cta-inner">
+    <h2>Pronto para a<br>embalagem circular?</h2>
+    <p>Comece com nossa prova de conceito gratuita para os primeiros 500 pedidos.</p>
+    <div class="cta-form">
+      <input type="email" class="cta-input" placeholder="seu@email.com.br" id="ctaEmail">
+      <button class="btn-dark" id="ctaBtn">
+        Quero minha Prova Grátis
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <p class="cta-note">Sem cartão de crédito · Resposta em até 24h · Sem compromisso</p>
+  </div>
+</div>
+ 
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="javascript:void(0)" class="logo">
+        <div class="logo-icon">↺</div>
+        VOLTA
+      </a>
+      <p>Transformando embalagens de e-commerce em economia circular. Cada pack que volta é um passo adiante.</p>
+      <div class="footer-socials">
+  <a href="https://www.instagram.com/inovacps/" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@governosp" aria-label="Tiktok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div>
+ </div>
+    <div class="footer-col">
+      <h4>Produto</h4>
+      <a href="#how">Como funciona</a>
+      <a href="#simulator">Simulador</a>
+      <a href="#impact">Impacto ambiental</a>
+      <a href="#forwhom">Para quem</a>
+    </div>
+    <div class="footer-col">
+      <h4>Criador</h4>
+      <a href="javascript:void(0)">Arthur Costa</a>
+      <a href="javascript:void(0)">16 anos</a>
+      <a href="https://www.instagram.com/eteclaurogomes.oficial/">Etec Lauro Gomes</a>
+      <a href="mailto:arthurcosta096@gmail.com">arthurcosta096@gmail.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>Projeto</h4>
+      <a href="javascript:void(0)">Feito individualmente</a>
+      <a href="javascript:void(0)">Projeto estudantil</a>
+      <a href="javascript:void(0)">São Bernardo do Campo, SP</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 VOLTA Embalagens Circulares Ltda. · By Arthur Costa</span>
+    <span class="footer-carbon">Operação carbono neutro certificada</span>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
